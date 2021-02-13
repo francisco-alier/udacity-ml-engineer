@@ -1,0 +1,9 @@
+setup.py
+logistic_implementation/LogisticRegression.py
+logistic_implementation/__init__.py
+logistic_implementation/test.py
+logistic_implementation.egg-info/PKG-INFO
+logistic_implementation.egg-info/SOURCES.txt
+logistic_implementation.egg-info/dependency_links.txt
+logistic_implementation.egg-info/not-zip-safe
+logistic_implementation.egg-info/top_level.txt
