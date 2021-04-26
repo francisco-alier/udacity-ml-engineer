@@ -1,3 +1,3 @@
-# ML Engineer Capstone Poroject Repository
+# ML Engineer Capstone Project Repository
 
 Project repository for capstone project.
