@@ -5,6 +5,7 @@ import os
 import pandas as pd
 
 # Import joblib package directly
+import sklearn.externals
 import joblib
 
 from sklearn.naive_bayes import GaussianNB
