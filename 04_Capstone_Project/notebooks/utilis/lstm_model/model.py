@@ -24,9 +24,10 @@ class LSTMClassifier(nn.Module):
         """
         x = x.t()
         lengths = x[0,:]
-        reviews = x[1:,:]
-        embeds = self.embedding(reviews)
+        lyrics = x[1:,:]
+        embeds = self.embedding(lyrics)
         lstm_out, _ = self.lstm(embeds)
+        
         out = self.dense(lstm_out)
         out = out[lengths - 1, range(len(lengths))]
         return self.sig(out.squeeze())

@@ -76,7 +76,6 @@ def train(model, train_loader, epochs, optimizer, loss_fn, device):
             batch_X = batch_X.to(device)
             batch_y = batch_y.to(device)
             
-            # TODO: Complete this train method to train the model provided.
             # clear gradiants
             optimizer.zero_grad()
             
@@ -116,8 +115,8 @@ if __name__ == '__main__':
                         help='size of the word embeddings (default: 32)')
     parser.add_argument('--hidden_dim', type=int, default=100, metavar='N',
                         help='size of the hidden dimension (default: 100)')
-    parser.add_argument('--vocab_size', type=int, default=5000, metavar='N',
-                        help='size of the vocabulary (default: 5000)')
+    parser.add_argument('--vocab_size', type=int, default=1000, metavar='N',
+                        help='size of the vocabulary (default: 1000)')
 
     # SageMaker Parameters
     parser.add_argument('--hosts', type=list, default=json.loads(os.environ['SM_HOSTS']))
