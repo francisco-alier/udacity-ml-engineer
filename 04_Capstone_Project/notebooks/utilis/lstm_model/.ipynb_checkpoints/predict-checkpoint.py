@@ -13,7 +13,7 @@ import torch.utils.data
 
 from model import LSTMClassifier
 
-from utils import lyrics_to_words, convert_and_pad
+from utils import review_to_words, convert_and_pad
 
 def model_fn(model_dir):
     """Load the PyTorch model from the `model_dir` directory."""
@@ -70,7 +70,7 @@ def predict_fn(input_data, model):
     #         data_X   - A sequence of length 500 which represents the converted review
     #         data_len - The length of the review
     
-    process_data = lyrics_to_words(input_data)
+    process_data = review_to_words(input_data)
 
     data_processed, length = convert_and_pad(model.word_dict, process_data)
 
@@ -87,6 +87,9 @@ def predict_fn(input_data, model):
 
     # Make sure to put the model into evaluation mode
     model.eval()
+
+    # TODO: Compute the result of applying the model to the input data. The variable `result` should
+    #       be a numpy array which contains a single integer which is either 1 or 0
 
     result = np.where(model(data) > 0.5, 1, 0)
 
