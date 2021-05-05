@@ -13,7 +13,7 @@ import torch.utils.data
 
 from model import LSTMClassifier
 
-from utils import lyrics_to_words, convert_and_pad
+from utilis import lyrics_to_words, convert_and_pad
 
 def model_fn(model_dir):
     """Load the PyTorch model from the `model_dir` directory."""
