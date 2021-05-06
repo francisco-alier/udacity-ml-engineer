@@ -14,7 +14,7 @@ The repository contains the following main items:
 * [Model Training and Deployment](https://github.com/francisco-alier/udacity-ml-engineer/blob/master/04_Capstone_Project/notebooks/03_Model_Training_SageMaker.ipynb)
 
 
-## [2. Deliverables](https://github.com/suryasanchez/machine-learning-engineer-nanodegree/tree/master/P3-capstone-project/Capstone-Notebook.ipynb)
+## [2. Deliverables](https://github.com/francisco-alier/udacity-ml-engineer/tree/master/04_Capstone_Project/deliverables)
 
 ## [3. Capstone Web App](https://github.com/suryasanchez/machine-learning-engineer-nanodegree/tree/master/P3-capstone-project/index.html)
 
