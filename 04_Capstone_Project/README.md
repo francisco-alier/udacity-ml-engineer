@@ -16,69 +16,27 @@ The repository contains the following main items:
 
 ## [2. Deliverables](https://github.com/francisco-alier/udacity-ml-engineer/tree/master/04_Capstone_Project/deliverables)
 
-## [3. Capstone Web App](https://github.com/suryasanchez/machine-learning-engineer-nanodegree/tree/master/P3-capstone-project/index.html)
+## [3. Capstone Web App](https://github.com/francisco-alier/udacity-ml-engineer/blob/master/04_Capstone_Project/webapp/index.html)
 
-### Environment
+### Requirements and Environment
 
+#### Environemnt
 * AWS Sagemaker
-* kernel: conda_python3
+* kernel: conda_pytorch_p36
+* Access to AWS services such as Lambda and API Gateway
 
-### Summary of the Capstone Notebook
+#### Requirements
+* Standard Python Libraries included in the conda package
+* `Sagemaker` version `1.72.0`
+* `Wordcloud`
+* `PyTorch`
 
-1. Definition
+### Final Webapp
 
-	* 1.1 Project Overview
-
-	* 1.2. Problem Statement
-
-	* 1.3 Metrics
-
-2. Analysis
-
-	* 2.1 Gathering data
-		* CRM connection settings
-		* Check the format of the data from the API and explore the content
-		* Create the dataset
-
-	* 2.2 Data pre-processing
-		* Cleaning the data
-		* Export to CSV for labeling
-		* Import the labeled CSV
-		* Reduce the number of class
-		* Detect the language of the text
-		* Keep only french text
-		* Tokenization
-		* Bag-of-Words features
-		* Save the processed training dataset locally
-
-	* 2.3 Training and testing the model
-		* Uploading the training data
-		* XGBoost model
-		* Testing the model
-
-	* 2.4 Tuning the Hyperparameters
-		* Hyperparameter Tuner
-
-	* 2.5 Binary classification
-		* Two categories
-		* Training of the model
-		* Testing the model
-		* Tuning the Hyperparameters
-
-	* 2.6 Deploy the model
-
-	* 2.7 Web application
-		* Input testing
-		* AWS Lambda
-		* HTML web app
-
-
-3. Conclusion
-
-	* 3.1 Reflection
-
-	* 3.2 Improvement
-
-	* 3.3 Application
-
-4. References
+The user will input the lyrics of a song of his/her choice and the app will output a sentence indicating if the song is positive or negative:
+<p align="center">
+  <img src="./images/webapp_output_positive.png" width="50%">
+</p>
+<p align="center">
+  <img src="./images/webapp_output_negative.png" width="50%">
+</p>
